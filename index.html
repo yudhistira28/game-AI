@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Sky Runner - Game Aksi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-wrap">
+    <div id="logo-row">
+      <img src="logo_moko.jpg" alt="Moko" class="logo-img">
+      <img src="logo_rpl_HD_jpg.jpg" alt="RPL" class="logo-img">
+      <img src="logo_smk_HD.jpg" alt="SMKN 1 Sanden" class="logo-img">
+    </div>
+    <div id="hud">
+      <div class="hud-box">Skor<br><span id="score">0</span></div>
+      <div class="hud-box">Level<br><span id="level">1</span></div>
+      <div class="hud-box">Terbaik<br><span id="best">0</span></div>
+      <div class="hud-box">Nyawa<br><span id="lives">3</span></div>
+      <button id="btnFullscreen" class="icon-btn" title="Layar penuh" aria-label="Layar penuh">⛶</button>
+    </div>
+
+    <div id="canvas-holder">
+      <canvas id="game" width="360" height="220"></canvas>
+      <div id="levelUp">LEVEL UP!</div>
+      <div id="startOverlay">
+        <div id="startCard">
+          <div id="startTitle">SKY RUNNER</div>
+          <div id="startSub">Lompat, geser, kumpulkan koin, ambil perisai biru</div>
+          <button id="btnStart" class="ctrl-btn wide">MULAI</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="controls">
+      <button id="btnLeft" class="ctrl-btn" aria-label="Kiri"><span class="ctrl-icon">◀</span></button>
+      <button id="btnJump" class="ctrl-btn wide"><span class="ctrl-icon">⤴</span>LOMPAT</button>
+      <button id="btnRight" class="ctrl-btn" aria-label="Kanan"><span class="ctrl-icon">▶</span></button>
+    </div>
+
+    <div id="msg"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
